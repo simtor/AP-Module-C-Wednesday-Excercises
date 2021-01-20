@@ -1,6 +1,4 @@
-// //Exercise 2: File Writer
-
-
+//Exercise 2: File Writer
 #include <iostream>
 #include <fstream>
 using namespace std;
@@ -21,10 +19,10 @@ int main () {
   cout<<"Updating file... \n";
   myfile << input <<"\n";
   myfile.close();
-//Added emplyees name into the file 
+//Added employees name into the file 
   cout<< "Add another (y/n)?";
   // cin>>decison;
-  getline(cin, decison);
+  getline(cin, decison);//getting input from user on what do next
   if(decison=="Y"||decison=="y"){
     myfile.close();
     main();
@@ -33,7 +31,5 @@ int main () {
   }else{ 
     cout<<"Goodbye";
   }
-
-  
   return 0;
 }
